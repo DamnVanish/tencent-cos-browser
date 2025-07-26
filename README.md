@@ -46,7 +46,7 @@
 ### 快速开始
 ```bash
 # 克隆仓库
-git clone https://github.com/DamnVanish/tencent-cos-browser/tencent-cos-browser.git
+git clone https://github.com/DamnVanish/tencent-cos-browser.git
 cd cos-penetration-tool
 
 # 创建虚拟环境（推荐）
