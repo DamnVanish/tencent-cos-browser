@@ -142,6 +142,10 @@ openpyxl>=3.1.2              # Excel报告生成
 requests>=2.31.0             # HTTP请求库
 urllib3>=2.0.4               # URL处理库
 ```
+## 演示
+<img width="1907" height="1214" alt="image" src="https://github.com/user-attachments/assets/9f55ef10-23ed-4eba-bd2b-faa959f01d37" />
+<img width="2206" height="1366" alt="image" src="https://github.com/user-attachments/assets/2d189192-349e-4818-929c-2e135f93964b" />
+
 
 ## 注意事项
 
