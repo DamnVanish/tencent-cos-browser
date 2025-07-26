@@ -153,6 +153,10 @@ pip install -r requirements.txt
 ├── README.md                # 项目文档
 └── .gitignore               # Git忽略文件
 ```
+## 演示
+<img width="1829" height="1262" alt="image" src="https://github.com/user-attachments/assets/61345401-2a06-444e-9923-c0f906fb8f9a" />
+<img width="2460" height="460" alt="image" src="https://github.com/user-attachments/assets/7dae8f44-a84f-499b-b9b5-6b809c216250" />
+
 
 ## 贡献与反馈
 
