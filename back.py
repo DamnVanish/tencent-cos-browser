@@ -213,10 +213,10 @@ except Exception as e:
             action = input("请选择功能编号: ").strip()
             if action == '4':
                 break
-            bucket_name = input("请输入存储桶名称（如xxxxx-1306817765）: ").strip()
-            bucket_region = input("请输入地域（如 ap-beijing）: ").strip()
-            bucket_client = CosS3Client(CosConfig(
-                Region=bucket_region,
+            bucket_name2 = input("请输入存储桶名称（如xxxxx-1306817765）: ").strip()
+            bucket_region2 = input("请输入地域（如 ap-beijing）: ").strip()
+            bucket_client2 = CosS3Client(CosConfig(
+                Region=bucket_region2,
                 Secret_id=config._secret_id,
                 Secret_key=config._secret_key,
                 Token=config._token,
@@ -234,16 +234,16 @@ except Exception as e:
                     object_key = 'qax666/test.txt'
                 else:
                     object_key = input("请输入要上传到的 COS 对象路径（如 test/1.txt）: ").strip()
-                url = upload_file(bucket_client, bucket_name, bucket_region, local_path, object_key)
+                url = upload_file(bucket_client2, bucket_name2, bucket_region2, local_path, object_key)
                 if url:
                     print(f"上传成功，文件 URL：{url}")
 
             elif action == '2':
                 key = input("请输入要删除的对象键,前提是你知道有哪些键也就是这个桶中已经存在了哪些文件，建议在能实现上传的功能再测试此功能（如test/1.txt）:").strip()
-                delete_file(bucket_client, bucket_name, bucket_region, key)
+                delete_file(bucket_client2, bucket_name2, bucket_region2, key)
 
             elif action == '3':
-                list_bucket_objects(bucket_client, bucket_name, bucket_region)
+                list_bucket_objects(bucket_client2, bucket_name2, bucket_region2)
 
             else:
                 print("无效选择，请重新输入")
